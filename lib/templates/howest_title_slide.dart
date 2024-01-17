@@ -4,11 +4,14 @@ import 'package:flutter_intro/howest_style.dart';
 
 class HowestTitleSlide extends FlutterDeckSlideWidget {
   final Widget slideContent;
+  final String route;
 
-  HowestTitleSlide({required this.slideContent})
+  HowestTitleSlide(
+      {required this.slideContent,
+      required this.route})
       : super(
-          configuration: const FlutterDeckSlideConfiguration(
-            route: '/title-slide',
+          configuration: FlutterDeckSlideConfiguration(
+            route: route,
           ),
         );
 

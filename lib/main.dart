@@ -17,6 +17,8 @@ import 'package:flutter_intro/slides/slide_011.dart';
 import 'package:flutter_intro/slides/slide_012.dart';
 import 'package:flutter_intro/slides/slide_013.dart';
 import 'package:flutter_intro/slides/slide_014.dart';
+import 'package:flutter_intro/slides/slide_015.dart';
+import 'package:flutter_intro/slides/slide_016.dart';
 import 'package:flutter_intro/templates/howest_content_slide.dart';
 import 'package:flutter_intro/templates/howest_title_slide.dart';
 
@@ -67,6 +69,7 @@ class MyApp extends StatelessWidget {
         slides: [
           HowestTitleSlide(
             slideContent: const Slide000(),
+            route: '/slide000'
           ),
           HowestContentSlide(
             title: "Wat is Flutter?",
@@ -160,12 +163,23 @@ class MyApp extends StatelessWidget {
             route: '/slide013',
           ),
           HowestContentSlide(
-            title: "Slide 14",
+            title: "Getting starded - codelabs",
             titleIconPath: "assets/images/flutter_logo.png",
             slideContent: const Slide014(),
             pageNumber: "14",
             route: '/slide014',
           ),
+          HowestContentSlide(
+            title: "Wanneer native? Wanneer Flutter?",
+            titleIconPath: "assets/images/flutter_logo.png",
+            slideContent: const Slide015(),
+            pageNumber: "15",
+            route: '/slide015',
+          ),
+          HowestTitleSlide(
+            slideContent: const Slide016(),
+            route: '/slide016'
+          )
         ], 
     );
   }
