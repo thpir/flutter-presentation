@@ -6,23 +6,22 @@ class Slide006 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    return Row(
+    return const Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Expanded(
             flex: 1,
             child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: width * 0.05),
+                padding: EdgeInsets.symmetric(horizontal: 120),
                 child: Center(
                   child: Text(
                     "De Dart-compiler compileert Flutter-code naar ARM- of Intel- machinecode en Javascript voor snelle prestaties op elk apparaat.",
                     style: TextStyle(
-                      fontSize: width * 0.025,
+                      fontSize: 46,
                     ),
                   ),
                 ))),
-        const Expanded(
+        Expanded(
           flex: 1,
           child: VideoFrame(),
         ),

@@ -17,7 +17,6 @@ class HowestTitleSlide extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return FlutterDeckSlide.template(
       backgroundBuilder: (context) => const FlutterDeckBackground.gradient(
         LinearGradient(
@@ -36,7 +35,7 @@ class HowestTitleSlide extends FlutterDeckSlideWidget {
         child: Image.asset(
                 "assets/images/howest_neutraal.png",
                 fit: BoxFit.contain,
-                width: width * 0.4,
+                width: 800,
               ),
       ),
     );

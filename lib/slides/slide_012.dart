@@ -6,6 +6,10 @@ class Slide012 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Image.asset("assets/images/012_01.png"),);
+      child: Image.asset(
+        "assets/images/012_01.png",
+        height: double.infinity,
+        fit: BoxFit.contain,
+      ),);
   }
 }

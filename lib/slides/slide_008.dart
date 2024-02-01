@@ -6,23 +6,22 @@ class Slide008 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    return Row(
+    return const Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Expanded(
             flex: 1,
             child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: width * 0.05),
+                padding: EdgeInsets.symmetric(horizontal: 120),
                 child: Center(
                   child: Text(
                     "Met Flutter heb je controle over elke pixel op het scherm. Zo kan je responsieve ontwerpen creëren voor elk type scherm.",
                     style: TextStyle(
-                      fontSize: width * 0.025,
+                      fontSize: 46,
                     ),
                   ),
                 ))),
-        const Expanded(
+        Expanded(
           flex: 1,
           child: VideoFrame(),
         ),

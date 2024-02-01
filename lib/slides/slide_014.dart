@@ -6,31 +6,29 @@ class Slide014 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Expanded(
+        const Expanded(
             flex: 1,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: width * 0.05),
+              padding: EdgeInsets.symmetric(horizontal: 120),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Bullet(text: "https://docs.flutter.dev/", width: width),
+                  Bullet(text: "https://docs.flutter.dev/"),
                   Bullet(
-                      text: "https://docs.flutter.dev/codelabs", width: width),
+                      text: "https://docs.flutter.dev/codelabs"),
                   Bullet(
                       text:
-                          "https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs",
-                      width: width),
+                          "https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs"),
                 ],
               ),
             )),
         Expanded(
           flex: 1,
           child: Padding(
-            padding: EdgeInsets.only(right: width * 0.05),
+            padding: const EdgeInsets.only(right: 40),
             child: Image.asset(
               "assets/images/014_01.png",
               width: double.infinity,
@@ -45,8 +43,7 @@ class Slide014 extends StatelessWidget {
 
 class Bullet extends StatelessWidget {
   final String text;
-  final double width;
-  const Bullet({required this.text, required this.width, super.key});
+  const Bullet({required this.text, super.key});
 
   Future<void> _launchUrl(Uri url) async {
     if (!await launchUrl(url)) {
@@ -59,14 +56,14 @@ class Bullet extends StatelessWidget {
     var url = Uri.parse(text);
 
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: width * 0.005),
+      padding: const EdgeInsets.symmetric(vertical: 40),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(
+          const Text(
             "• ",
             style: TextStyle(
-              fontSize: width * 0.022,
+              fontSize: 46,
             ),
           ),
           Expanded(
@@ -77,8 +74,8 @@ class Bullet extends StatelessWidget {
               },
               child: Text(
                 text,
-                style: TextStyle(
-                  fontSize: width * 0.022,
+                style: const TextStyle(
+                  fontSize: 46,
                 ),
               ),
             ),

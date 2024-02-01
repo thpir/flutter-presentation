@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterDeckApp(
-        configuration: const FlutterDeckConfiguration(
-          background: FlutterDeckBackgroundConfiguration(
+        configuration: FlutterDeckConfiguration(
+          background: const FlutterDeckBackgroundConfiguration(
             light: FlutterDeckBackground.gradient(
                LinearGradient(
                 begin: Alignment.topLeft,
@@ -48,23 +48,38 @@ class MyApp extends StatelessWidget {
               )
             )
           ),
-          controls: FlutterDeckControlsConfiguration(
-            nextKey: LogicalKeyboardKey.arrowRight,
-            previousKey: LogicalKeyboardKey.arrowLeft,
-            openDrawerKey: LogicalKeyboardKey.arrowUp,
-            toggleMarkerKey: LogicalKeyboardKey.keyM,
+          controls: const FlutterDeckControlsConfiguration(
+            presenterToolbarVisible: true,
+            shortcuts: FlutterDeckShortcutsConfiguration(
+              enabled: true,
+              nextSlide: SingleActivator(LogicalKeyboardKey.arrowRight),
+              previousSlide: SingleActivator(LogicalKeyboardKey.arrowLeft),
+              toggleMarker: SingleActivator(
+                LogicalKeyboardKey.keyM,
+                control: true,
+                meta: true,
+              ),
+              toggleNavigationDrawer: SingleActivator(
+                LogicalKeyboardKey.period,
+                control: true,
+                meta: true,
+              ),
+            ),
           ),
-          footer: FlutterDeckFooterConfiguration(
+          footer: const FlutterDeckFooterConfiguration(
             showSlideNumbers: false,
           ),
-          header: FlutterDeckHeaderConfiguration(
+          header: const FlutterDeckHeaderConfiguration(
             showHeader: false,
           ),
-          marker: FlutterDeckMarkerConfiguration(
+          marker: const FlutterDeckMarkerConfiguration(
             color: Colors.white,
             strokeWidth: 8.0,
           ),
-          transition: FlutterDeckTransition.fade(),
+          slideSize: FlutterDeckSlideSize.fromAspectRatio(
+            aspectRatio: const FlutterDeckAspectRatio.ratio16x10(),
+          ),
+          transition: const FlutterDeckTransition.fade(),
         ), 
         slides: [
           HowestTitleSlide(

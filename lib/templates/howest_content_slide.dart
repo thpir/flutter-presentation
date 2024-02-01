@@ -24,7 +24,6 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return FlutterDeckSlide.template(
       backgroundBuilder: (context) => FlutterDeckBackground.solid(
         Theme.of(context).colorScheme.background,
@@ -41,7 +40,7 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
       footerBuilder: (context) => ColoredBox(
         color: HowestStyle.backgroundColor,
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: width * 0.025),
+          padding: const EdgeInsets.symmetric(vertical: 50),
           child: Row(
             children: [
               Expanded(
@@ -49,27 +48,27 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
                 child: Container(
                   color: HowestStyle.primaryColor,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0),
+                    padding: const EdgeInsets.symmetric(vertical: 15.0),
                     child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsets.only(left: width * 0.05),
+                            padding: const EdgeInsets.only(left: 100),
                             child: Text(
                                 "${DateFormat('dd/MM/yyyy').format(DateTime.now())} - Flutter demo",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: HowestStyle.onPrimaryColor,
-                                  fontSize: width * 0.015,
+                                  fontSize: 25,
                                 )),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(right: width * 0.05),
+                            padding: const EdgeInsets.only(right: 100),
                             child: Text(pageNumber,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: HowestStyle.onPrimaryColor,
-                                  fontSize: width * 0.015,
+                                  fontSize: 25,
                                 )),
                           ),
                         ]),
@@ -78,7 +77,7 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
               ),
               Image.asset(
                 "assets/images/howest_logo.jpeg",
-                height: width * 0.05,
+                height: 100,
                 fit: BoxFit.contain,
               ),
             ],
@@ -88,8 +87,8 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
       headerBuilder: (context) => ColoredBox(
         color: HowestStyle.backgroundColor,
         child: Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: width * 0.05, vertical: width * 0.025),
+          padding: const EdgeInsets.symmetric(
+              horizontal: 120, vertical: 60),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -97,22 +96,23 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
                 Image.asset(
                   titleIconPath,
                   fit: BoxFit.contain,
-                  width: width * 0.05,
-                  height: width * 0.05,
+                  width: 70,
+                  height: 70,
                 ),
-                const SizedBox(width: 16.0),
+                const SizedBox(width: 40.0),
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: HowestStyle.primaryTextColor,
-                    fontSize: width * 0.03,
+                    fontSize: 70,
                     fontWeight: FontWeight.bold,
+                    fontFamily: 'Nunito',
                   ),
                 ),
               ]),
               const SizedBox(height: 8.0),
               const Divider(
-                height: 6,
+                height: 12,
                 color: HowestStyle.primaryColor,
               )
             ],

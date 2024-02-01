@@ -5,30 +5,29 @@ class Slide005 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Expanded(
+        const Expanded(
             flex: 1,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: width * 0.05),
+              padding: EdgeInsets.symmetric(horizontal: 120),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Bullet(text: "Ontwikkeld door Google", width: width),
-                  Bullet(text: "Type-safe", width: width),
-                  Bullet(text: "Object-oriented", width: width),
-                  Bullet(text: "Built-in null-safety", width: width),
-                  Bullet(text: "Hoofdzakelijk (maar niet noodzakelijk) gebruikt voor Flutter", width: width),
-                  Bullet(text: "Eenvoudig om te leren", width: width),
+                  Bullet(text: "Ontwikkeld door Google"),
+                  Bullet(text: "Type-safe"),
+                  Bullet(text: "Object-oriented"),
+                  Bullet(text: "Built-in null-safety"),
+                  Bullet(text: "Hoofdzakelijk (maar niet noodzakelijk) gebruikt voor Flutter"),
+                  Bullet(text: "Eenvoudig om te leren"),
                 ],
               ),
             )),
         Expanded(
           flex: 1,
           child: Padding(
-            padding: EdgeInsets.only(right: width * 0.05),
+            padding: const EdgeInsets.only(right: 100),
             child: Image.asset(
               "assets/images/005_01.png",
               width: double.infinity,
@@ -43,25 +42,24 @@ class Slide005 extends StatelessWidget {
 
 class Bullet extends StatelessWidget {
   final String text;
-  final double width;
-  const Bullet({required this.text, required this.width, super.key});
+  const Bullet({required this.text, super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(
+        const Text(
           "• ",
           style: TextStyle(
-            fontSize: width * 0.025,
+            fontSize: 46,
           ),
         ),
         Expanded(
           child: Text(
             text,
-            style: TextStyle(
-              fontSize: width * 0.025,
+            style: const TextStyle(
+              fontSize: 46,
             ),
           ),
         ),

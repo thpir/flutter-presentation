@@ -24,7 +24,7 @@ class Slide009 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
+    //double width = MediaQuery.of(context).size.width;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -33,8 +33,8 @@ class Slide009 extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerRight,
               child: SizedBox(
-                width: width * 0.3,
-                height: width * 0.3,
+                width: 600,
+                height: 600,
                 child: GridView.count(
                   crossAxisCount: 4,
                   crossAxisSpacing: 0,
@@ -44,8 +44,8 @@ class Slide009 extends StatelessWidget {
                       .map((e) => e != null
                           ? Center(
                             child: SizedBox(
-                              width: width * 0.3 / 4,
-                              height: width * 0.3 / 4,
+                              width: 600 / 4,
+                              height: 600 / 4,
                               child: Image.asset(
                                   e,
                                   fit: BoxFit.cover,
@@ -64,7 +64,7 @@ class Slide009 extends StatelessWidget {
               child: Image.asset(
                 "assets/images/009_01.png",
                 fit: BoxFit.cover,
-                height: width * 0.3,
+                height: 600,
                 alignment: Alignment.center,
               ),
             )),

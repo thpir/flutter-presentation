@@ -6,7 +6,6 @@ class Slide001 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return SizedBox(
       width: double.infinity,
       height: double.infinity,
@@ -15,32 +14,32 @@ class Slide001 extends StatelessWidget {
           Align(
             alignment: Alignment.topLeft,
             child: Padding(
-              padding: EdgeInsets.only(left: width * 0.01),
+              padding: const EdgeInsets.only(left: 20),
               child: Image.asset(
                 "assets/images/001_01.png",
-                width: width * 0.25,
+                width: 500,
               ),
             ),
           ),
           Align(
             alignment: Alignment.bottomRight,
             child: Padding(
-              padding: EdgeInsets.only(right: width * 0.01),
+              padding: const EdgeInsets.only(right: 20),
               child: Image.asset(
                 "assets/images/001_02.png",
-                width: width * 0.25,
+                width: 500,
               ),
             ),
           ),
           Center(
             child: RichText(
               textAlign: TextAlign.center,
-              text: TextSpan(
+              text: const TextSpan(
                 style: TextStyle(
-                  fontSize: width * 0.025,
+                  fontSize: 46,
                   color: HowestStyle.primaryTextColor,
                 ),
-                children: const[
+                children: [
                   TextSpan(
                     text: "Flutter is een ",
                   ),

@@ -5,29 +5,28 @@ class Slide010 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Expanded(
+        const Expanded(
             flex: 2,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: width * 0.05),
+              padding: EdgeInsets.symmetric(horizontal: 80),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Bullet(text: "UI wordt opgebouwd uit Widgets = Widget Tree", width: width),
-                  Bullet(text: "Widgets beschrijven hoe een 'View' eruit moet zien", width: width),
-                  Bullet(text: "Widget = Object (class) in Dart", width: width),
-                  Bullet(text: "Widget heeft een 'lifecycle'", width: width),
-                  Bullet(text: "Custom widgets", width: width),
+                  Bullet(text: "UI wordt opgebouwd uit Widgets = Widget Tree"),
+                  Bullet(text: "Widgets beschrijven hoe een 'View' eruit moet zien"),
+                  Bullet(text: "Widget = Object (class) in Dart"),
+                  Bullet(text: "Widget heeft een 'lifecycle'"),
+                  Bullet(text: "Custom widgets"),
                 ],
               ),
             )),
         Expanded(
           flex: 3,
           child: Padding(
-            padding: EdgeInsets.only(right: width * 0.05),
+            padding: EdgeInsets.only(right: 20),
             child: Image.asset(
               "assets/images/010_01.png",
               width: double.infinity,
@@ -42,25 +41,24 @@ class Slide010 extends StatelessWidget {
 
 class Bullet extends StatelessWidget {
   final String text;
-  final double width;
-  const Bullet({required this.text, required this.width, super.key});
+  const Bullet({required this.text, super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(
+        const Text(
           "• ",
           style: TextStyle(
-            fontSize: width * 0.022,
+            fontSize: 46,
           ),
         ),
         Expanded(
           child: Text(
             text,
-            style: TextStyle(
-              fontSize: width * 0.022,
+            style: const TextStyle(
+              fontSize: 46,
             ),
           ),
         ),

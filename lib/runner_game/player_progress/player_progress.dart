@@ -12,7 +12,7 @@ class PlayerProgress extends ChangeNotifier {
     getLatestFromStore();
   }
 
-  /// TODO: If needed, replace this with some other mechanism for saving
+  ///       If needed, replace this with some other mechanism for saving
   ///       the player's progress. Currently, this uses the local storage
   ///       (i.e. NSUserDefaults on iOS, SharedPreferences on Android
   ///       or local storage on the web).

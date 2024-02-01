@@ -6,23 +6,22 @@ class Slide007 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    return Row(
+    return const Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Expanded(
+        Expanded(
           flex: 1,
           child: VideoFrame(),
         ),
         Expanded(
             flex: 1,
             child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: width * 0.05),
+                padding: EdgeInsets.symmetric(horizontal: 120),
                 child: Center(
                   child: Text(
                     "Update de code en bekijk de wijzigingen vrijwel onmiddellijk dankzij de “Hot Reload” functie zonder dat je app zijn “State” verliest.",
                     style: TextStyle(
-                      fontSize: width * 0.025,
+                      fontSize: 46,
                     ),
                   ),
                 ))),

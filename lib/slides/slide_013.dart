@@ -18,12 +18,14 @@ class Slide013 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    return Center(
-      child: SizedBox(
-        width: width * 0.8,
-        height: width * 0.5,
-        child: MyGame()
+    return const Center(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 40),
+        child: SizedBox(
+          width: double.infinity,
+          height: double.infinity,
+          child: MyGame()
+        ),
       )
     );
   }
