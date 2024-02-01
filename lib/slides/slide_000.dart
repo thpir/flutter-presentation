@@ -42,7 +42,7 @@ class Slide000 extends StatelessWidget {
           Align(
             alignment: Alignment.topRight,
             child: Image.asset(
-              "assets/images/personalized_dash.png",
+              "assets/images/personalized_dash.webp",
               height: 700,
               fit: BoxFit.contain,
             ),

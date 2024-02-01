@@ -26,9 +26,9 @@ class Slide010 extends StatelessWidget {
         Expanded(
           flex: 3,
           child: Padding(
-            padding: EdgeInsets.only(right: 20),
+            padding: const EdgeInsets.only(right: 20),
             child: Image.asset(
-              "assets/images/010_01.png",
+              "assets/images/010_01.webp",
               width: double.infinity,
               fit: BoxFit.contain,
             ),

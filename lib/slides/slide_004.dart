@@ -10,7 +10,7 @@ class Slide004 extends StatelessWidget {
       height: double.infinity,
       child: Center(
         child: Image.asset(
-          "assets/images/004_01.png",
+          "assets/images/004_01.webp",
           height: double.infinity,
           fit: BoxFit.contain,
         )

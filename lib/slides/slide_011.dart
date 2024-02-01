@@ -23,7 +23,7 @@ class Slide011 extends StatelessWidget {
         Expanded(
           flex: 3,
           child: Image.asset(
-            "assets/images/011_01.png",
+            "assets/images/011_01.webp",
             width: 500,
             fit: BoxFit.contain,
           ),

@@ -29,7 +29,7 @@ class Slide005 extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(right: 100),
             child: Image.asset(
-              "assets/images/005_01.png",
+              "assets/images/005_01.webp",
               width: double.infinity,
               fit: BoxFit.contain,
             ),

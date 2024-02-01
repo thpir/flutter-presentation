@@ -4,22 +4,22 @@ class Slide009 extends StatelessWidget {
   const Slide009({super.key});
 
   List<String?> get images => [
-        "assets/images/009_02.png",
-        "assets/images/009_03.png",
-        "assets/images/009_04.png",
-        "assets/images/009_05.png",
-        "assets/images/009_06.png",
-        "assets/images/009_07.png",
-        "assets/images/009_08.png",
-        "assets/images/009_09.png",
+        "assets/images/009_02.webp",
+        "assets/images/009_03.webp",
+        "assets/images/009_04.webp",
+        "assets/images/009_05.webp",
+        "assets/images/009_06.webp",
+        "assets/images/009_07.webp",
+        "assets/images/009_08.webp",
+        "assets/images/009_09.webp",
         null,
-        "assets/images/009_10.png",
-        "assets/images/009_11.png",
-        "assets/images/009_12.png",
+        "assets/images/009_10.webp",
+        "assets/images/009_11.webp",
+        "assets/images/009_12.webp",
         null,
         null,
-        "assets/images/009_13.png",
-        "assets/images/009_14.png",
+        "assets/images/009_13.webp",
+        "assets/images/009_14.webp",
       ];
 
   @override
@@ -62,7 +62,7 @@ class Slide009 extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(right: 24.0),
               child: Image.asset(
-                "assets/images/009_01.png",
+                "assets/images/009_01.webp",
                 fit: BoxFit.cover,
                 height: 600,
                 alignment: Alignment.center,

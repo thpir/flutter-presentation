@@ -33,7 +33,7 @@ class HowestTitleSlide extends FlutterDeckSlideWidget {
       headerBuilder: (context) => ColoredBox(
         color: Colors.transparent,
         child: Image.asset(
-                "assets/images/howest_neutraal.png",
+                "assets/images/howest_neutraal.webp",
                 fit: BoxFit.contain,
                 width: 800,
               ),

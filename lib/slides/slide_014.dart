@@ -30,7 +30,7 @@ class Slide014 extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(right: 40),
             child: Image.asset(
-              "assets/images/014_01.png",
+              "assets/images/014_01.webp",
               width: double.infinity,
               fit: BoxFit.contain,
             ),

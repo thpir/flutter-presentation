@@ -16,7 +16,7 @@ class Slide001 extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(left: 20),
               child: Image.asset(
-                "assets/images/001_01.png",
+                "assets/images/001_01.webp",
                 width: 500,
               ),
             ),
@@ -26,7 +26,7 @@ class Slide001 extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(right: 20),
               child: Image.asset(
-                "assets/images/001_02.png",
+                "assets/images/001_02.webp",
                 width: 500,
               ),
             ),

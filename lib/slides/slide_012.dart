@@ -7,7 +7,7 @@ class Slide012 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Image.asset(
-        "assets/images/012_01.png",
+        "assets/images/012_01.webp",
         height: double.infinity,
         fit: BoxFit.contain,
       ),);
