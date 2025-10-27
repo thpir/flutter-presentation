@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_intro/howest_style.dart';
@@ -9,13 +10,18 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
   final Widget slideContent;
   final String pageNumber;
   final String route;
+  final Image? background;
+  final Color? backgroundOverlay;
 
   HowestContentSlide(
-      {required this.title,
+      {super.key,
+      required this.title,
       required this.titleIconPath,
       required this.slideContent,
       required this.pageNumber,
-      required this.route})
+      required this.route,
+      this.background,
+      this.backgroundOverlay})
       : super(
           configuration: FlutterDeckSlideConfiguration(
             route: route,
@@ -25,20 +31,19 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.template(
-      backgroundBuilder: (context) => FlutterDeckBackground.solid(
-        Theme.of(context).colorScheme.background,
-      ),
-      contentBuilder: (context) => ColoredBox(
-        color: HowestStyle.backgroundColor,
-        child: Container(
-          color: HowestStyle.backgroundColor,
-          width: double.infinity,
-          height: double.infinity,
-          child: slideContent,
-        ),
+      backgroundBuilder: (context) => background == null
+          ? FlutterDeckBackground.solid(
+              HowestStyle.backgroundColor,
+            )
+          : FlutterDeckBackground.image(background!),
+      contentBuilder: (context) => Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: backgroundOverlay ?? HowestStyle.backgroundColor,
+        child: slideContent,
       ),
       footerBuilder: (context) => ColoredBox(
-        color: HowestStyle.backgroundColor,
+        color: backgroundOverlay ?? HowestStyle.backgroundColor,
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 50),
           child: Row(
@@ -57,18 +62,16 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
                           Padding(
                             padding: const EdgeInsets.only(left: 100),
                             child: Text(
-                                "${DateFormat('dd/MM/yyyy').format(DateTime.now())} - Flutter demo",
-                                style: const TextStyle(
+                                "${DateFormat('dd/MM/yyyy').format(DateTime.now())} - Flutter: the future of cross-platform development",
+                                style: HowestStyle.howestTextTheme.bodySmall.copyWith(
                                   color: HowestStyle.onPrimaryColor,
-                                  fontSize: 25,
                                 )),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 100),
                             child: Text(pageNumber,
-                                style: const TextStyle(
+                                style: HowestStyle.howestTextTheme.bodySmall.copyWith(
                                   color: HowestStyle.onPrimaryColor,
-                                  fontSize: 25,
                                 )),
                           ),
                         ]),
@@ -76,7 +79,7 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
                 ),
               ),
               Image.asset(
-                "assets/images/howest_logo.webp",
+                "assets/images/howest_logo.png",
                 height: 100,
                 fit: BoxFit.contain,
               ),
@@ -85,10 +88,9 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
         ),
       ),
       headerBuilder: (context) => ColoredBox(
-        color: HowestStyle.backgroundColor,
+        color: backgroundOverlay ?? HowestStyle.backgroundColor,
         child: Padding(
-          padding: const EdgeInsets.symmetric(
-              horizontal: 120, vertical: 60),
+          padding: const EdgeInsets.symmetric(horizontal: 120, vertical: 60),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -100,13 +102,15 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
                   height: 70,
                 ),
                 const SizedBox(width: 40.0),
-                Text(
-                  title,
-                  style: const TextStyle(
-                    color: HowestStyle.primaryTextColor,
-                    fontSize: 70,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Nunito',
+                Expanded(
+                  child: AutoSizeText(
+                    title,
+                    minFontSize: 20,
+                    maxFontSize: 70,
+                    style: HowestStyle.howestTextTheme.header.copyWith(
+                      color: HowestStyle.primaryTextColor,
+                    ),
+                    maxLines: 1,
                   ),
                 ),
               ]),

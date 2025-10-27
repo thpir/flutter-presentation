@@ -7,7 +7,7 @@ class HowestTitleSlide extends FlutterDeckSlideWidget {
   final String route;
 
   HowestTitleSlide(
-      {required this.slideContent,
+      {super.key, required this.slideContent,
       required this.route})
       : super(
           configuration: FlutterDeckSlideConfiguration(
