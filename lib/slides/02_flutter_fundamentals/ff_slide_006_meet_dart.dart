@@ -18,41 +18,41 @@ class MeetDart extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   BulletText(
-                    text: "Developed by Google",
+                    text:  Text("Developed by Google",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
                     ),
-                  ),
+                  ),),
                   BulletText(
-                    text: "Type-safe",
+                    text:  Text("Type-safe",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
                     ),
-                  ),
+                  ),),
                   BulletText(
-                    text: "Object-oriented",
+                    text:  Text("Object-oriented",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
                     ),
-                  ),
+                  ),),
                   BulletText(
-                    text: "Built-in null-safety",
+                    text:  Text("Built-in null-safety",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
                     ),
-                  ),
+                  ),),
                   BulletText(
-                    text: "Mainly (but not necessarily) used for Flutter",
+                    text:  Text("Mainly (but not necessarily) used for Flutter",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
                     ),
-                  ),
+                  ),),
                   BulletText(
-                    text: "Easy to learn",
+                    text:  Text("Easy to learn",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
                     ),
-                  ),
+                  ),),
                 ],
               ),
             )),
@@ -61,7 +61,7 @@ class MeetDart extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(right: 100),
             child: Image.asset(
-              "assets/images/005_01.webp",
+              "assets/images/meet_dart.webp",
               width: double.infinity,
               fit: BoxFit.contain,
             ),

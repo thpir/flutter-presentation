@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BulletText extends StatelessWidget {
-  final String text;
+  final Widget text;
   final TextStyle? style;
   const BulletText({required this.text, this.style, super.key});
 
@@ -15,10 +15,7 @@ class BulletText extends StatelessWidget {
           style: style,
         ),
         Expanded(
-          child: Text(
-            text,
-            style: style,
-          ),
+          child: text,
         ),
       ],
     );

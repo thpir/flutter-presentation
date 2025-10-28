@@ -15,30 +15,50 @@ class MobileDevLandscapeIn2025 extends StatelessWidget {
         spacing: 40,
         children: [
           BulletText(
-            text: "Modern Declarative UI.",
+            text: Text("Modern Declarative UI.",
             style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
               color: HowestStyle.primaryTextColor,
             )),
+            style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+              color: HowestStyle.primaryTextColor,
+            ),
+          ),
           BulletText(
-            text: "Cross-platform development is the rule rather than the exception.",
+            text: Text( "Cross-platform development is the rule rather than the exception.",
             style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
               color: HowestStyle.primaryTextColor,
             )),
+            style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+              color: HowestStyle.primaryTextColor,
+            ),
+          ),
           BulletText(
-            text: "Increased focus on performance and smooth user experiences.",
+            text:  Text("Increased focus on performance and smooth user experiences.",
             style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
               color: HowestStyle.primaryTextColor,
             )),
+            style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+              color: HowestStyle.primaryTextColor,
+            ),
+          ),
           BulletText(
-            text: "AI and Machine Learning integration.",
+            text: Text("AI and Machine Learning integration.",
             style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
               color: HowestStyle.primaryTextColor,
             )),
+            style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+              color: HowestStyle.primaryTextColor,
+            ),
+          ),
           BulletText(
-            text: "Beyond mobile.",
+            text: Text("Beyond mobile.",
             style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
               color: HowestStyle.primaryTextColor,
             )),
+            style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+              color: HowestStyle.primaryTextColor,
+            ),
+          ),
         ],
       ),
     );

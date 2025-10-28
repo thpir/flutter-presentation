@@ -18,30 +18,30 @@ class Slide010 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   BulletText(
-                    text: "UI is built from Widgets = Widget Tree",
+                    text:  Text("UI is built from Widgets = Widget Tree",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
-                    ),),
+                    ),),),
                   BulletText(
-                    text: "Widgets describe how a 'View' should look",
+                    text:  Text("Widgets describe how a 'View' should look",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
-                    ),),
+                    ),),),
                   BulletText(
-                    text: "Widget = Object (class) in Dart",
+                    text:  Text("Widget = Object (class) in Dart",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
-                    ),),
+                    ),),),
                   BulletText(
-                    text: "Widget has a 'lifecycle'",
+                    text:  Text("Widget has a 'lifecycle'",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
-                    ),),
+                    ),),),
                   BulletText(
-                    text: "Custom widgets",
+                    text:  Text("Custom widgets",
                     style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
                       color: HowestStyle.primaryTextColor,
-                    ),),
+                    ),),),
                 ],
               ),
             )),

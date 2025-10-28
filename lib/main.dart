@@ -23,11 +23,17 @@ import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_007_core_c
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_008_core_concepts_packages.dart';
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_009_core_concepts_platform_channels.dart';
 import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_000_fah_title.dart';
-import 'package:flutter_intro/slides/04_wrap_up/wrap_up_slide_000_wrap_up_title.dart';
-import 'package:flutter_intro/slides/04_wrap_up/wrap_up_slide_001_flame_demo.dart';
-import 'package:flutter_intro/slides/04_wrap_up/wrap_up_slide_002_getting_started_codelabs.dart';
-import 'package:flutter_intro/slides/04_wrap_up/wrap_up_slide_003_when_flutter.dart';
-import 'package:flutter_intro/slides/04_wrap_up/wrap_up_slide_004_questions_answers.dart';
+import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_001_lambrecht_info.dart';
+import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_002_lambrecht_tag_reader.dart';
+import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_003_lambrecht_problem.dart';
+import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_004_lambrecht_solution.dart';
+import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_005_yet_info.dart';
+import 'package:flutter_intro/slides/04_beyond_frond_end/bfe_slide_000_bfe_title.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_000_wrap_up_title.dart';
+import 'package:flutter_intro/slides/04_beyond_frond_end/bfe_slide_001_flame_demo.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_001_getting_started_codelabs.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_002_when_flutter.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_003_questions_answers.dart';
 import 'package:flutter_intro/templates/howest_content_slide.dart';
 import 'package:flutter_intro/templates/howest_title_slide.dart';
 
@@ -221,39 +227,78 @@ class MyApp extends StatelessWidget {
           route: '/platformChannels',
         ),
 
-        /// Flutter at Howest slides
+        /// Beyond front-end slides
         HowestTitleSlide(
-            slideContent: const FahTitle(), route: '/flutterAtHowestTitle'),
-
-        /// Wrap-up slides
-        HowestTitleSlide(
-            slideContent: const WrapUpTitle(), route: '/wrapUpTitle'),
+            slideContent: const BfeTitle(), route: '/bfeTitle'),
         HowestContentSlide(
           title: "Dart beyond Flutter - Flutter Flame demo",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const FlameDemo(),
-          pageNumber: "23",
+          pageNumber: "22",
           route: '/flameDemo',
         ),
+
+        /// Flutter at Howest slides
+        HowestTitleSlide(
+          slideContent: const FahTitle(), 
+          route: '/flutterAtHowestTitle'),
+        HowestContentSlide(
+          title: "Flutter @ Howest - project Lambrecht - Introduction",
+          titleIconPath: "assets/images/icon_siloconnect2.webp",
+          slideContent: const LambrechtInfo(),
+          pageNumber: "24",
+          route: '/lambrechtIntro',
+        ),
+        HowestContentSlide(
+          title: "Flutter @ Howest - project Lambrecht - Tag reader",
+          titleIconPath: "assets/images/icon_siloconnect2.webp",
+          slideContent: const LambrechtTagReader(),
+          pageNumber: "25",
+          route: '/lambrechtTagReader',
+        ),
+        HowestContentSlide(
+          title: "Flutter @ Howest - project Lambrecht - The problem",
+          titleIconPath: "assets/images/icon_siloconnect2.webp",
+          slideContent: const LambrechtProblem(),
+          pageNumber: "26",
+          route: '/lambrechtProblem',
+        ),
+        HowestContentSlide(
+          title: "Flutter @ Howest - project Lambrecht - The solution",
+          titleIconPath: "assets/images/icon_siloconnect2.webp",
+          slideContent: const LambrechtSolution(),
+          pageNumber: "27",
+          route: '/lambrechtSolution',
+        ),
+        HowestContentSlide(
+          title: "Flutter @ Howest - YET - Introduction",
+          titleIconPath: "assets/images/icon_yet.png",
+          slideContent: const YetInfo(),
+          pageNumber: "28",
+          route: '/yetInfo',
+        ),
+
+        /// Wrap-up slides
+        HowestTitleSlide(
+            slideContent: const WrapUpTitle(), 
+            route: '/wrapUpTitle'),
         HowestContentSlide(
           title: "Getting starded - codelabs",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const GettingStartedCodelabs(),
-          pageNumber: "24",
+          pageNumber: "30",
           route: '/gettingStarted',
         ),
         HowestContentSlide(
           title: "When native, when Flutter?",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const WhenFlutter(),
-          pageNumber: "25",
+          pageNumber: "31",
           route: '/whenFlutter',
         ),
-
-        /// Bookmark: Continue to work from here
-
         HowestTitleSlide(
-            slideContent: const QuestionsAnswers(), route: '/slide016')
+          slideContent: const QuestionsAnswers(), 
+          route: '/questionsAnswers'),
       ],
     );
   }

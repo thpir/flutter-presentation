@@ -26,13 +26,19 @@ class TodaysJourney extends StatelessWidget {
             ),
           ),
           Text(
-            "3. Flutter at Howest",
+            "4. Beyond front-end",
             style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
               color: HowestStyle.onPrimaryColor,
             ),
           ),
           Text(
-            "4. Wrap-up and Q&A",
+            "4. Flutter at Howest",
+            style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+              color: HowestStyle.onPrimaryColor,
+            ),
+          ),
+          Text(
+            "5. Wrap-up and Q&A",
             style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
               color: HowestStyle.onPrimaryColor,
             ),

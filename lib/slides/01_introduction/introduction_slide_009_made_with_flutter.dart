@@ -4,11 +4,11 @@ class MadeWithFlutter extends StatelessWidget {
   const MadeWithFlutter({super.key});
 
   List<String?> get images => [
-        "assets/images/009_02.webp",
-        "assets/images/009_03.webp",
-        "assets/images/009_04.webp",
-        "assets/images/009_05.webp",
-        "assets/images/009_06.webp",
+        "assets/images/icon_google_adds.webp",
+        "assets/images/icon_covid_scan.webp",
+        "assets/images/icon_telegraaf.webp",
+        "assets/images/icon_mijn_mooie_straat.webp",
+        "assets/images/icon_covid_safe.webp",
         "assets/images/009_07.webp",
         "assets/images/009_08.webp",
         "assets/images/009_09.webp",
@@ -58,7 +58,7 @@ class MadeWithFlutter extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(right: 24.0),
               child: Image.asset(
-                "assets/images/009_01.webp",
+                "assets/images/wonderous_link.webp",
                 fit: BoxFit.cover,
                 height: 600,
                 alignment: Alignment.center,
