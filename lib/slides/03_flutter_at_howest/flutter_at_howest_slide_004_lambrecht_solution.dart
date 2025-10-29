@@ -1,19 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_intro/howest_style.dart';
 import 'package:flutter_intro/templates/widgets/bullet_text.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_intro/utils/url_handler.dart';
 
 class LambrechtSolution extends StatelessWidget {
   const LambrechtSolution({super.key});
 
   @override
   Widget build(BuildContext context) {
-
-    Future<void> visitLink(Uri url) async {
-      if (!await launchUrl(url)) {
-        throw Exception('Could not launch $url');
-      }
-    }
     
     return Row(
       children: [
@@ -53,11 +47,16 @@ class LambrechtSolution extends StatelessWidget {
                 BulletText(
                   text: Text("OCR for reading the silo number.", style: HowestStyle.howestTextTheme.bodyMedium.copyWith(color: HowestStyle.primaryTextColor),),
                   style: HowestStyle.howestTextTheme.bodyMedium.copyWith(color: HowestStyle.primaryTextColor)),
-                IconButton(
+                SizedBox(height: 10),
+                TextButton.icon(
+                  label: Text(
+                    "Watch the full informational video on YouTube",
+                    style: HowestStyle.howestTextTheme.bodySmall
+                        .copyWith(color: HowestStyle.primaryColor),
+                  ),
                   onPressed:() async {
-                        await visitLink(Uri.parse(
-                            "https://youtu.be/Gh-jlMLTISo"));
-                      }, icon: Icon(Icons.movie_creation_outlined, color: HowestStyle.primaryColor, size: 60,),),
+                        await UrlHandler().visitUrl("https://youtu.be/Gh-jlMLTISo");
+                      }, icon: Icon(Icons.movie_creation_outlined, color: HowestStyle.primaryColor, size: 40,),),
               ],
             ),
           ),

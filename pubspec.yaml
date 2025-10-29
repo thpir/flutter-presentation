@@ -26,6 +26,8 @@ dependencies:
   http: ^1.1.2
   url_launcher: ^6.2.3
   auto_size_text: ^3.0.0
+  lottie: ^3.3.2
+  rive: ^0.13.20
 
 dev_dependencies:
   flutter_test:
@@ -37,6 +39,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/animations/
     - assets/images/
     - assets/videos/
     - assets/images/dash/

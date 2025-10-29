@@ -25,7 +25,7 @@ class _VideoFrameState extends State<VideoFrame> {
   @override
   void initState() {
     _controller = VideoPlayerController.asset(
-      "assets/videos/lambrecht_promovideo.mp4",
+      "assets/videos/lambrecht_infovideo.mp4",
     )..initialize().then((_) {
         setState(() {});
         _controller.play();

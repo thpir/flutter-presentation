@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_intro/howest_style.dart';
 import 'package:flutter_intro/templates/widgets/bullet_text.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_intro/utils/url_handler.dart';
 
 class GettingStartedCodelabs extends StatelessWidget {
   const GettingStartedCodelabs({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Future<void> visitLink(Uri url) async {
-      if (!await launchUrl(url)) {
-        throw Exception('Could not launch $url');
-      }
-    }
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -27,7 +22,7 @@ class GettingStartedCodelabs extends StatelessWidget {
                 children: [
                   InkWell(
                       onTap: () async {
-                        await visitLink(Uri.parse("https://docs.flutter.dev/"));
+                        await UrlHandler().visitUrl("https://docs.flutter.dev/");
                       },
                       child: BulletText(
                         text:  Text("https://docs.flutter.dev/",
@@ -37,8 +32,7 @@ class GettingStartedCodelabs extends StatelessWidget {
                       )),
                   InkWell(
                       onTap: () async {
-                        await visitLink(
-                            Uri.parse("https://docs.flutter.dev/codelabs"));
+                        await UrlHandler().visitUrl("https://docs.flutter.dev/codelabs");
                       },
                       child: BulletText(
                         text:  Text("https://docs.flutter.dev/codelabs",
@@ -48,8 +42,7 @@ class GettingStartedCodelabs extends StatelessWidget {
                       )),
                   InkWell(
                       onTap: () async {
-                        await visitLink(Uri.parse(
-                            "https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs"));
+                        await UrlHandler().visitUrl("https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs");
                       },
                       child: BulletText(
                         text:

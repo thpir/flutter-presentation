@@ -6,17 +6,21 @@ class QuestionsAnswers extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      height: double.infinity,
-      child: Center(
-        child: Padding(
-          padding: EdgeInsets.only(bottom: 200),
-          child: Text(
+    return SizedBox.expand(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        spacing: 40,
+        children: [
+          Text(
             'Questions?',
             style: HowestStyle.howestTextTheme.display.copyWith(color: HowestStyle.onPrimaryColor)
           ),
-        ),
+          Image.asset(
+            'assets/images/flutter_is_amazing_meme.jpg',
+            height: 600,
+            fit: BoxFit.contain,
+          ),
+        ],
       ),
     );
   }
