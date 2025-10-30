@@ -8,7 +8,6 @@ class GettingStartedCodelabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -22,34 +21,45 @@ class GettingStartedCodelabs extends StatelessWidget {
                 children: [
                   InkWell(
                       onTap: () async {
-                        await UrlHandler().visitUrl("https://docs.flutter.dev/");
+                        await UrlHandler()
+                            .visitUrl("https://docs.flutter.dev/");
                       },
                       child: BulletText(
-                        text:  Text("https://docs.flutter.dev/",
-                        style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                          color: HowestStyle.primaryTextColor,
-                        ),),
+                        text: Text(
+                          "https://docs.flutter.dev/",
+                          style:
+                              HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                            color: HowestStyle.primaryTextColor,
+                          ),
+                        ),
                       )),
                   InkWell(
                       onTap: () async {
-                        await UrlHandler().visitUrl("https://docs.flutter.dev/codelabs");
+                        await UrlHandler()
+                            .visitUrl("https://docs.flutter.dev/codelabs");
                       },
                       child: BulletText(
-                        text:  Text("https://docs.flutter.dev/codelabs",
-                        style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                          color: HowestStyle.primaryTextColor,
-                        ),),
+                        text: Text(
+                          "https://docs.flutter.dev/codelabs",
+                          style:
+                              HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                            color: HowestStyle.primaryTextColor,
+                          ),
+                        ),
                       )),
                   InkWell(
                       onTap: () async {
-                        await UrlHandler().visitUrl("https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs");
+                        await UrlHandler().visitUrl(
+                            "https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs");
                       },
                       child: BulletText(
-                        text:
-                             Text("https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs",
-                        style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                          color: HowestStyle.primaryTextColor,
-                        ),),
+                        text: Text(
+                          "https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs",
+                          style:
+                              HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                            color: HowestStyle.primaryTextColor,
+                          ),
+                        ),
                       )),
                 ],
               ),

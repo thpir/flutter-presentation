@@ -7,10 +7,11 @@ import 'package:flutter_intro/slides/01_introduction/introduction_slide_001_abou
 import 'package:flutter_intro/slides/01_introduction/introduction_slide_003_introduction_title.dart';
 import 'package:flutter_intro/slides/01_introduction/introduction_slide_006_meet_flutter.dart';
 import 'package:flutter_intro/slides/01_introduction/introduction_slide_002_todays_journey.dart';
-import 'package:flutter_intro/slides/01_introduction/introduction_slide_007_flutter_by_the_numbers.dart';
+import 'package:flutter_intro/slides/01_introduction/introduction_slide_007_where_flutter_stands_out.dart';
+import 'package:flutter_intro/slides/01_introduction/introduction_slide_008_flutter_by_the_numbers.dart';
 import 'package:flutter_intro/slides/01_introduction/introduction_slide_004_mobile_dev_landscape_in_2025.dart';
 import 'package:flutter_intro/slides/01_introduction/introduction_slide_005_modern_cross_platform_frameworks.dart';
-import 'package:flutter_intro/slides/01_introduction/introduction_slide_008_timeline.dart';
+import 'package:flutter_intro/slides/01_introduction/introduction_slide_009_timeline.dart';
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_000_ff_title.dart';
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_001_what_is_flutter.dart';
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_003_frame_rate.dart';
@@ -20,10 +21,11 @@ import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_008_meet_d
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_002_performant_on_every_device.dart';
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_005_hot_reload.dart';
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_006_flexible.dart';
-import 'package:flutter_intro/slides/01_introduction/introduction_slide_009_made_with_flutter.dart';
+import 'package:flutter_intro/slides/01_introduction/introduction_slide_010_made_with_flutter.dart';
 import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_009_core_concepts_widgets.dart';
-import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_010_core_concepts_packages.dart';
-import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_011_core_concepts_platform_channels.dart';
+import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_010_counter_app.dart';
+import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_011_core_concepts_packages.dart';
+import 'package:flutter_intro/slides/02_flutter_fundamentals/ff_slide_012_core_concepts_platform_channels.dart';
 import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_000_fah_title.dart';
 import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_001_lambrecht_info.dart';
 import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slide_002_lambrecht_tag_reader.dart';
@@ -43,9 +45,11 @@ import 'package:flutter_intro/slides/03_flutter_at_howest/flutter_at_howest_slid
 import 'package:flutter_intro/slides/04_beyond_frond_end/bfe_slide_000_bfe_title.dart';
 import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_000_wrap_up_title.dart';
 import 'package:flutter_intro/slides/04_beyond_frond_end/bfe_slide_001_flame_demo.dart';
-import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_001_getting_started_codelabs.dart';
-import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_002_when_flutter.dart';
-import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_003_questions_answers.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_002_getting_started_codelabs.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_001_when_flutter.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_003_start_to_flutter.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_004_join_community.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_005_questions_answers.dart';
 import 'package:flutter_intro/templates/howest_content_slide.dart';
 import 'package:flutter_intro/templates/howest_subtitle_slide.dart';
 import 'package:flutter_intro/templates/howest_title_slide.dart';
@@ -152,23 +156,29 @@ class MyApp extends StatelessWidget {
           route: '/meetFlutter',
         ),
         HowestContentSlide(
+          title: "Where Flutter stands out", 
+          titleIconPath: "assets/images/flutter_logo.png", 
+          slideContent: const WhereFlutterStandsOut(), 
+          pageNumber: "8", 
+          route: '/whereFlutterStandsOut'),
+        HowestContentSlide(
           title: "Flutter by the Numbers: Industry Adoption & Success Metrics",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const FlutterByTheNumbers(),
-          pageNumber: "8",
+          pageNumber: "9",
           route: '/flutterByTheNumbers',
         ),
         HowestContentSlide(
             title: "A brief history...",
             titleIconPath: "assets/images/flutter_logo.png",
             slideContent: const Timeline(),
-            pageNumber: "9",
+            pageNumber: "10",
             route: '/timeline'),
         HowestContentSlide(
           title: "Made with Flutter",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const MadeWithFlutter(),
-          pageNumber: "10",
+          pageNumber: "11",
           route: '/madeWithFlutter',
         ),
 
@@ -180,28 +190,28 @@ class MyApp extends StatelessWidget {
           title: "What is Flutter? Cross-platform beyond mobile",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const WhatIsFlutter(),
-          pageNumber: "12",
+          pageNumber: "13",
           route: '/flutterFundamentals',
         ),
         HowestContentSlide(
           title: "Why Flutter? - fast",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const FlutterFast(),
-          pageNumber: "13",
+          pageNumber: "14",
           route: '/flutterFast',
         ),
         HowestContentSlide(
           title: "60fps & 120fps: Smooth Animations Across Devices",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const FlutterFrameRate(),
-          pageNumber: "14",
+          pageNumber: "15",
           route: '/flutterFrameRate',
         ),
         HowestContentSlide(
           title: "Smooth Animations - demo",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const SmoothAnimations(),
-          pageNumber: "15",
+          pageNumber: "16",
           route: '/smoothAnimations',
         ),
         HowestContentSlide(
@@ -240,17 +250,24 @@ class MyApp extends StatelessWidget {
           route: '/coreConceptsWidgets',
         ),
         HowestContentSlide(
+          title: "The counter app",
+          titleIconPath: "assets/images/flutter_logo.png",
+          slideContent: const CounterApp(),
+          pageNumber: "21",
+          route: '/counterApp',
+        ),
+        HowestContentSlide(
           title: "Core concepts: packages",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const CoreConceptsPackages(),
-          pageNumber: "21",
+          pageNumber: "22",
           route: '/coreConceptsPackages',
         ),
         HowestContentSlide(
           title: "Core concepts: Platform channels",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const CoreConceptsPlatformChannels(),
-          pageNumber: "22",
+          pageNumber: "23",
           route: '/platformChannels',
         ),
 
@@ -261,7 +278,7 @@ class MyApp extends StatelessWidget {
           title: "Dart beyond Flutter - Flutter Flame demo",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const FlameDemo(),
-          pageNumber: "24",
+          pageNumber: "25",
           route: '/flameDemo',
         ),
 
@@ -273,35 +290,35 @@ class MyApp extends StatelessWidget {
           title: "Flutter @ Howest - project Lambrecht - Introduction",
           titleIconPath: "assets/images/icon_siloconnect2.webp",
           slideContent: const LambrechtInfo(),
-          pageNumber: "26",
+          pageNumber: "27",
           route: '/lambrechtIntro',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - project Lambrecht - Tag reader",
           titleIconPath: "assets/images/icon_siloconnect2.webp",
           slideContent: const LambrechtTagReader(),
-          pageNumber: "27",
+          pageNumber: "28",
           route: '/lambrechtTagReader',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - project Lambrecht - The problem",
           titleIconPath: "assets/images/icon_siloconnect2.webp",
           slideContent: const LambrechtProblem(),
-          pageNumber: "28",
+          pageNumber: "29",
           route: '/lambrechtProblem',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - project Lambrecht - The solution",
           titleIconPath: "assets/images/icon_siloconnect2.webp",
           slideContent: const LambrechtSolution(),
-          pageNumber: "29",
+          pageNumber: "30",
           route: '/lambrechtSolution',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - YET - Introduction",
           titleIconPath: "assets/images/icon_yet.png",
           slideContent: const YetInfo(),
-          pageNumber: "30",
+          pageNumber: "31",
           route: '/yetInfo',
         ),
         HowestContentSlide(
@@ -310,21 +327,21 @@ class MyApp extends StatelessWidget {
           backgroundOverlay: HowestStyle.backgroundColor.withAlpha(170),
           titleIconPath: "assets/images/icon_yet.png",
           slideContent: const YetCollages(),
-          pageNumber: "31",
+          pageNumber: "32",
           route: '/yetCollages',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - YET - Challenges",
           titleIconPath: "assets/images/icon_yet.png",
           slideContent: const YetChallenges(),
-          pageNumber: "32",
+          pageNumber: "33",
           route: '/yetChallenges',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - YET - AI integration",
           titleIconPath: "assets/images/icon_yet.png",
           slideContent: const YetAiIntro(),
-          pageNumber: "33",
+          pageNumber: "34",
           route: '/yetAiIntro',
         ),
         HowestSubtitleSlide(
@@ -337,28 +354,28 @@ class MyApp extends StatelessWidget {
           title: "Flutter @ Howest - YET - How to apply GenAI",
           titleIconPath: "assets/images/icon_yet.png",
           slideContent: const GenAiApplied(),
-          pageNumber: "36",
+          pageNumber: "37",
           route: '/genAiApplied',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - YET - Drawing with Flutter's CustomPaint",
           titleIconPath: "assets/images/icon_yet.png",
           slideContent: const DrawingWithCustomPaint(),
-          pageNumber: "37",
+          pageNumber: "38",
           route: '/genAiInFlutterPaint',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - YET - Creating the Mask in Flutter",
           titleIconPath: "assets/images/icon_yet.png",
           slideContent: const CreatingTheMask(),
-          pageNumber: "38",
+          pageNumber: "39",
           route: '/creatingTheMask',
         ),
         HowestContentSlide(
           title: "Flutter @ Howest - YET - Capturing the Mask in Flutter",
           titleIconPath: "assets/images/icon_yet.png",
           slideContent: const CapturingTheMask(),
-          pageNumber: "39",
+          pageNumber: "40",
           route: '/capturingTheMask',
         ),
         HowestSubtitleSlide(
@@ -369,18 +386,32 @@ class MyApp extends StatelessWidget {
             slideContent: const WrapUpTitle(), 
             route: '/wrapUpTitle'),
         HowestContentSlide(
-          title: "Getting starded - codelabs",
-          titleIconPath: "assets/images/flutter_logo.png",
-          slideContent: const GettingStartedCodelabs(),
-          pageNumber: "41",
-          route: '/gettingStarted',
-        ),
-        HowestContentSlide(
           title: "When native, when Flutter?",
           titleIconPath: "assets/images/flutter_logo.png",
           slideContent: const WhenFlutter(),
           pageNumber: "42",
           route: '/whenFlutter',
+        ),
+        HowestContentSlide(
+          title: "Getting starded - codelabs",
+          titleIconPath: "assets/images/flutter_logo.png",
+          slideContent: const GettingStartedCodelabs(),
+          pageNumber: "43",
+          route: '/gettingStarted',
+        ),
+        HowestContentSlide(
+          title: "Start to Flutter @ Howest",
+          titleIconPath: "assets/images/flutter_logo.png",
+          slideContent: const StartToFlutter(),
+          pageNumber: "44",
+          route: '/startToFlutter',
+        ),
+        HowestContentSlide(
+          title: "Join the Flutter Community",
+          titleIconPath: "assets/images/flutter_logo.png",
+          slideContent: const JoinCommunity(),
+          pageNumber: "45",
+          route: '/joinCommunity',
         ),
         HowestSubtitleSlide(
           slideContent: const QuestionsAnswers(), 
