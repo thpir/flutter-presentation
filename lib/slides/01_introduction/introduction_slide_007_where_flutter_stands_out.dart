@@ -6,7 +6,7 @@ class WhereFlutterStandsOut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      "assets/images/flutter_community.png",
+      "assets/images/flutter_community.webp",
       height: 900,
     );
   }

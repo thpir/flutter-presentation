@@ -18,7 +18,7 @@ class FlutterFrameRate extends StatelessWidget {
             ),
           ),
           Image.asset(
-            'assets/images/flutter_frames_chart.png',
+            'assets/images/flutter_frames_chart.webp',
             width: double.infinity,
           )
         ],

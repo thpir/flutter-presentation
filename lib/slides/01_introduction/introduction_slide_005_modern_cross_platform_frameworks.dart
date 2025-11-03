@@ -9,7 +9,7 @@ class ModernCrossPlatformFrameworks extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Image.asset(
-          'assets/images/popular_frameworks.png',
+          'assets/images/popular_frameworks.webp',
           fit: BoxFit.contain,
         ),
       ),

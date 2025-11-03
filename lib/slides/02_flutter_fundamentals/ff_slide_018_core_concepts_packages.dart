@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_intro/howest_style.dart';
+import 'package:flutter_intro/utils/url_handler.dart';
 
 class CoreConceptsPackages extends StatelessWidget {
   const CoreConceptsPackages({super.key});
@@ -23,10 +24,15 @@ class CoreConceptsPackages extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: Image.asset(
-            "assets/images/011_01.webp",
-            width: 500,
-            fit: BoxFit.contain,
+          child: InkWell(
+            onTap: () {
+              UrlHandler().visitUrl("https://pub.dev/packages/camera");
+            },
+            child: Image.asset(
+              "assets/images/011_01.webp",
+              width: 500,
+              fit: BoxFit.contain,
+            ),
           ),
         ),
       ],

@@ -22,7 +22,7 @@ class AboutMe extends StatelessWidget {
               ),
               clipBehavior: Clip.antiAlias,
               child: Image.asset(
-                'assets/images/profile_pic.jpg',
+                'assets/images/profile_pic.webp',
                 width: 400,
                 fit: BoxFit.contain,
               ),
@@ -66,7 +66,7 @@ class AboutMe extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/qr_linkedin.png',
+              'assets/images/qr_linkedin.webp',
               width: 400,
               fit: BoxFit.contain,
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_intro/howest_style.dart';
+import 'package:flutter_intro/utils/url_handler.dart';
 
 class StartToFlutter extends StatelessWidget {
   const StartToFlutter({super.key});
@@ -27,10 +28,15 @@ class StartToFlutter extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Image.asset(
-              "assets/images/qr_start_to_flutter.png",
-              height: 500,
-              
+            child: InkWell(
+              onTap: () {
+                UrlHandler().visitUrl("https://www.howest.be/nl/opleidingen/navormingen/start-to-flutter");
+              },
+              child: Image.asset(
+                "assets/images/qr_start_to_flutter.webp",
+                height: 500,
+                
+              ),
             ),
           )
         ],

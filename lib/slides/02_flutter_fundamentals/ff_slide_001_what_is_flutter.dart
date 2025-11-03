@@ -10,10 +10,10 @@ class WhatIsFlutter extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            'assets/images/cross_platform.png',
+            'assets/images/cross_platform.webp',
             fit: BoxFit.contain,),
           Image.asset(
-            'assets/images/flutter_add_to_app.png',
+            'assets/images/flutter_add_to_app.webp',
             fit: BoxFit.contain,
           )
         ],

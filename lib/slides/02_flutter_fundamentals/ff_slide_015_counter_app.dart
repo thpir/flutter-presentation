@@ -11,7 +11,7 @@ class CounterApp extends StatelessWidget {
         children: [
           Expanded(
             child: Image.asset(
-              "assets/images/counter_app_code.png",
+              "assets/images/counter_app_code.webp",
               fit: BoxFit.fitHeight
             ),
       

@@ -79,7 +79,7 @@ class HowestContentSlide extends FlutterDeckSlideWidget {
                 ),
               ),
               Image.asset(
-                "assets/images/howest_logo.png",
+                "assets/images/howest_logo.webp",
                 height: 100,
                 fit: BoxFit.contain,
               ),

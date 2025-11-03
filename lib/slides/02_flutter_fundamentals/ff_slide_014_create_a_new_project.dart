@@ -32,7 +32,7 @@ class CreateANewProject extends StatelessWidget {
           ),
           Expanded(
             child: Image.asset(
-              "assets/images/flutter_create.png",
+              "assets/images/flutter_create.webp",
               fit: BoxFit.fitWidth,
             ),
           ),

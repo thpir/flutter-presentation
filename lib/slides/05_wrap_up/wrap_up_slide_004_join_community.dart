@@ -11,7 +11,7 @@ class JoinCommunity extends StatelessWidget {
       spacing: 40,
       children: [
         Image.asset("assets/images/logo_flutter_belgium.webp", height: 300),
-        Image.asset("assets/images/qr_flutter_belgium.png", height: 300),
+        Image.asset("assets/images/qr_flutter_belgium.webp", height: 300),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           spacing: 60,

@@ -18,14 +18,14 @@ class TreesInFlutter extends StatelessWidget {
               BulletText(text: Text("The root widget is the top of the tree and all others are child widgets.",style: HowestStyle.howestTextTheme.bodySmall.copyWith(color: HowestStyle.primaryTextColor),), style: HowestStyle.howestTextTheme.bodySmall.copyWith(color: HowestStyle.primaryTextColor),),
               BulletText(text: Text("Flutter framework reads widget tree from top to bottom.",style: HowestStyle.howestTextTheme.bodySmall.copyWith(color: HowestStyle.primaryTextColor),), style: HowestStyle.howestTextTheme.bodySmall.copyWith(color: HowestStyle.primaryTextColor),),
               Expanded(child: Image.asset(
-                "assets/images/trees_in_flutter.png",
+                "assets/images/trees_in_flutter.webp",
                 height: double.infinity,
                 fit: BoxFit.contain,
               )),
             ],
           )),
           Expanded(child: Image.asset(
-            "assets/images/widget_tree.png",
+            "assets/images/widget_tree.webp",
             height: double.infinity,
             fit: BoxFit.contain,
           )),

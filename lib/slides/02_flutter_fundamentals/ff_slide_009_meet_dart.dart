@@ -16,43 +16,69 @@ class MeetDart extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 120),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 20,
                 children: [
                   BulletText(
-                    text:  Text("Developed by Google",
-                    style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                      color: HowestStyle.primaryTextColor,
-                    ),
-                  ),),
+                      text: Text(
+                        "Developed by Google",
+                        style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                          color: HowestStyle.primaryTextColor,
+                        ),
+                      ),
+                      style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                        color: HowestStyle.primaryTextColor,
+                      )),
                   BulletText(
-                    text:  Text("Type-safe",
-                    style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                      color: HowestStyle.primaryTextColor,
-                    ),
-                  ),),
+                      text: Text(
+                        "Type-safe",
+                        style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                          color: HowestStyle.primaryTextColor,
+                        ),
+                      ),
+                      style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                        color: HowestStyle.primaryTextColor,
+                      )),
                   BulletText(
-                    text:  Text("Object-oriented",
-                    style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                      color: HowestStyle.primaryTextColor,
-                    ),
-                  ),),
+                      text: Text(
+                        "Object-oriented",
+                        style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                          color: HowestStyle.primaryTextColor,
+                        ),
+                      ),
+                      style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                        color: HowestStyle.primaryTextColor,
+                      )),
                   BulletText(
-                    text:  Text("Built-in null-safety",
-                    style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                      color: HowestStyle.primaryTextColor,
-                    ),
-                  ),),
+                      text: Text(
+                        "Built-in null-safety",
+                        style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                          color: HowestStyle.primaryTextColor,
+                        ),
+                      ),
+                      style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                        color: HowestStyle.primaryTextColor,
+                      )),
                   BulletText(
-                    text:  Text("Mainly (but not necessarily) used for Flutter",
-                    style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                      color: HowestStyle.primaryTextColor,
-                    ),
-                  ),),
+                      text: Text(
+                        "Mainly (but not necessarily) used for Flutter",
+                        style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                          color: HowestStyle.primaryTextColor,
+                        ),
+                      ),
+                      style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                        color: HowestStyle.primaryTextColor,
+                      )),
                   BulletText(
-                    text:  Text("Easy to learn",
-                    style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
-                      color: HowestStyle.primaryTextColor,
+                    text: Text(
+                      "Easy to learn",
+                      style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                        color: HowestStyle.primaryTextColor,
+                      ),
                     ),
-                  ),),
+                      style: HowestStyle.howestTextTheme.bodyMedium.copyWith(
+                        color: HowestStyle.primaryTextColor,
+                      )
+                  ),
                 ],
               ),
             )),

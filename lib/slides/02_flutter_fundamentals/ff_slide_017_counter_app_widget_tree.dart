@@ -7,7 +7,7 @@ class CounterAppWidgetTree extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: Image.asset(
-        "assets/images/counter_app_widget_tree.png",
+        "assets/images/counter_app_widget_tree.webp",
         fit: BoxFit.contain,),
     );
   }

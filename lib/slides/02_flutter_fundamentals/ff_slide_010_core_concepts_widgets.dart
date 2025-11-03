@@ -16,7 +16,8 @@ class CoreConceptsWidgets extends StatelessWidget {
           Expanded(
               flex: 2,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 20,
                 children: [
                   BulletText(
                     text:  Text("UI is built from Widgets = Widget Tree",

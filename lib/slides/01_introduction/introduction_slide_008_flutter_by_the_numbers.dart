@@ -10,7 +10,7 @@ class FlutterByTheNumbers extends StatelessWidget {
       height: double.infinity,
       child: Center(
           child: Image.asset(
-        "assets/images/flutter_by_the_numbers.jpg",
+        "assets/images/flutter_by_the_numbers.webp",
         height: double.infinity,
         fit: BoxFit.contain,
       )),

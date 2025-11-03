@@ -10,7 +10,7 @@ class DartCompiler extends StatelessWidget {
       height: double.infinity,
       child: Center(
         child: Image.asset(
-          "assets/images/dart_compiler.png",
+          "assets/images/dart_compiler.webp",
           height: double.infinity,
           fit: BoxFit.contain,
         )

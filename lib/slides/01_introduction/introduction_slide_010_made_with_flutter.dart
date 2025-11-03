@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_intro/utils/url_handler.dart';
 
 class MadeWithFlutter extends StatelessWidget {
   const MadeWithFlutter({super.key});
@@ -57,11 +58,16 @@ class MadeWithFlutter extends StatelessWidget {
             flex: 3,
             child: Padding(
               padding: const EdgeInsets.only(right: 24.0),
-              child: Image.asset(
-                "assets/images/wonderous_link.webp",
-                fit: BoxFit.cover,
-                height: 600,
-                alignment: Alignment.center,
+              child: InkWell(
+                onTap: () {
+                  UrlHandler().visitUrl("https://flutter.gskinner.com/wonderous/");
+                },
+                child: Image.asset(
+                  "assets/images/wonderous_link.webp",
+                  fit: BoxFit.cover,
+                  height: 600,
+                  alignment: Alignment.center,
+                ),
               ),
             )),
       ],

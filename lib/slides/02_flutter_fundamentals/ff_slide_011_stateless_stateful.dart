@@ -9,7 +9,7 @@ class StatelessStateful extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 120.0),
       child: SizedBox.expand(
           child: Image.asset(
-        'assets/images/stateful_vs_stateless.png',
+        'assets/images/stateful_vs_stateless.webp',
         fit: BoxFit.contain,
       )),
     );

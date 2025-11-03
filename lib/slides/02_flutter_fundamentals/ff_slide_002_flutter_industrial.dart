@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_intro/utils/url_handler.dart';
 
 class FlutterIndustrial extends StatelessWidget {
   const FlutterIndustrial({super.key});
@@ -12,13 +13,18 @@ class FlutterIndustrial extends StatelessWidget {
         spacing: 200,
         children: [
           Image.asset(
-            'assets/images/flutter_pi_project.jpeg',
+            'assets/images/flutter_pi_project.webp',
             fit: BoxFit.contain,),
           Center(
-            child: Image.asset(
-              'assets/images/qr_flutter_industrial.png',
-              height: 400,
-              fit: BoxFit.contain,
+            child: InkWell(
+              onTap: () {
+                UrlHandler().visitUrl("https://www.industrialflutter.com/");
+              },
+              child: Image.asset(
+                'assets/images/qr_flutter_industrial.webp',
+                height: 400,
+                fit: BoxFit.contain,
+              ),
             ),
           )
         ],
