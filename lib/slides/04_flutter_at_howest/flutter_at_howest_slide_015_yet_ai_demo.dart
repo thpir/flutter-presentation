@@ -17,7 +17,7 @@ class YetAiDemo extends StatelessWidget {
           Expanded(child: VideoFrame()),
           TextButton.icon(
             onPressed: () async {
-              await UrlHandler()
+              await UrlHandler
                   .visitUrl("https://www.youtube.com/watch?v=R-_OANgCEP0");
             },
             label: Text(

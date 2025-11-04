@@ -26,10 +26,10 @@ class CoreConceptsPackages extends StatelessWidget {
           flex: 3,
           child: InkWell(
             onTap: () {
-              UrlHandler().visitUrl("https://pub.dev/packages/camera");
+              UrlHandler.visitUrl("https://pub.dev/packages/camera");
             },
             child: Image.asset(
-              "assets/images/011_01.webp",
+              "assets/images/camera_package.webp",
               width: 500,
               fit: BoxFit.contain,
             ),

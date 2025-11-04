@@ -59,7 +59,7 @@ class CoreConceptsWidgets extends StatelessWidget {
           Expanded(
             flex: 3,
             child: Image.asset(
-              "assets/images/010_01.webp",
+              "assets/images/widgets_breakdown.webp",
               width: double.infinity,
               fit: BoxFit.contain,
             ),

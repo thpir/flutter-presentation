@@ -55,7 +55,7 @@ class LambrechtSolution extends StatelessWidget {
                         .copyWith(color: HowestStyle.primaryColor),
                   ),
                   onPressed:() async {
-                        await UrlHandler().visitUrl("https://youtu.be/Gh-jlMLTISo");
+                        await UrlHandler.visitUrl("https://youtu.be/Gh-jlMLTISo");
                       }, icon: Icon(Icons.movie_creation_outlined, color: HowestStyle.primaryColor, size: 60,),),
               ],
             ),

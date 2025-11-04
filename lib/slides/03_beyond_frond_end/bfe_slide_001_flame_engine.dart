@@ -51,7 +51,7 @@ class FlameEngine extends StatelessWidget {
             child: Center(
               child: InkWell(
                 onTap: () {
-                  UrlHandler().visitUrl("https://flame-engine.org/");
+                  UrlHandler.visitUrl("https://flame-engine.org/");
                 },
                 child: Image.asset(
                   'assets/images/qr_get_started_flame.webp',

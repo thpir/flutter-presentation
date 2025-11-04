@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_intro/utils/url_handler.dart';
 
 class HowestSlideDeckChallenge extends StatelessWidget {
   const HowestSlideDeckChallenge({super.key});
@@ -11,14 +12,25 @@ class HowestSlideDeckChallenge extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         spacing: 20,
         children: [
-          Image.asset(
-            'assets/images/flutter_deck_showcase.webp',
-            fit: BoxFit.contain,),
-          Center(
+          InkWell(
+            onTap: () {
+              UrlHandler.visitUrl("https://flutterdeck.dev/showcase/");
+            },
             child: Image.asset(
-              'assets/images/qr_flutter_deck.webp',
-              height: 400,
+              'assets/images/flutter_deck_showcase.webp',
               fit: BoxFit.contain,
+            ),
+          ),
+          Center(
+            child: InkWell(
+              onTap: () {
+                UrlHandler.visitUrl("https://github.com/thpir/flutter-deck-howest-template");
+              },
+              child: Image.asset(
+                'assets/images/qr_flutter_deck_howest.webp',
+                height: 400,
+                fit: BoxFit.contain,
+              ),
             ),
           )
         ],

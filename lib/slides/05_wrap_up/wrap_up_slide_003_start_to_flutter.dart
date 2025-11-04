@@ -30,7 +30,7 @@ class StartToFlutter extends StatelessWidget {
           Expanded(
             child: InkWell(
               onTap: () {
-                UrlHandler().visitUrl("https://www.howest.be/nl/opleidingen/navormingen/start-to-flutter");
+                UrlHandler.visitUrl("https://www.howest.be/nl/opleidingen/navormingen/start-to-flutter");
               },
               child: Image.asset(
                 "assets/images/qr_start_to_flutter.webp",

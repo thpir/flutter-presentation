@@ -7,7 +7,7 @@ class CoreConceptsPlatformChannels extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Image.asset(
-        "assets/images/012_01.webp",
+        "assets/images/method_channels.webp",
         height: double.infinity,
         fit: BoxFit.contain,
       ),

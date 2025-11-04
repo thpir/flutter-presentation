@@ -21,7 +21,7 @@ class GettingStartedCodelabs extends StatelessWidget {
                 children: [
                   InkWell(
                       onTap: () async {
-                        await UrlHandler()
+                        await UrlHandler
                             .visitUrl("https://docs.flutter.dev/");
                       },
                       child: BulletText(
@@ -35,7 +35,7 @@ class GettingStartedCodelabs extends StatelessWidget {
                       )),
                   InkWell(
                       onTap: () async {
-                        await UrlHandler()
+                        await UrlHandler
                             .visitUrl("https://docs.flutter.dev/codelabs");
                       },
                       child: BulletText(
@@ -49,7 +49,7 @@ class GettingStartedCodelabs extends StatelessWidget {
                       )),
                   InkWell(
                       onTap: () async {
-                        await UrlHandler().visitUrl(
+                        await UrlHandler.visitUrl(
                             "https://docs.flutter.dev/get-started/flutter-for/xamarin-forms-devs");
                       },
                       child: BulletText(
@@ -69,7 +69,7 @@ class GettingStartedCodelabs extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(right: 40),
             child: Image.asset(
-              "assets/images/014_01.webp",
+              "assets/images/flutter_for_xamarin_devs.webp",
               width: double.infinity,
               fit: BoxFit.contain,
             ),

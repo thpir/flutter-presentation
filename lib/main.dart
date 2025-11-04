@@ -64,6 +64,7 @@ import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_003_start_to_flutt
 import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_004_join_community.dart';
 import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_005_howest_slide_deck_challenge.dart';
 import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_006_questions_answers.dart';
+import 'package:flutter_intro/slides/05_wrap_up/wrap_up_slide_007_slides.dart';
 import 'package:flutter_intro/templates/howest_content_slide.dart';
 import 'package:flutter_intro/templates/howest_subtitle_slide.dart';
 import 'package:flutter_intro/templates/howest_title_slide.dart';
@@ -520,6 +521,8 @@ class MyApp extends StatelessWidget {
         ),
         HowestSubtitleSlide(
             slideContent: const QuestionsAnswers(), route: '/questionsAnswers'),
+        HowestSubtitleSlide(
+            slideContent: const PresentationLink(), route: '/presentationLink'),
       ],
     );
   }

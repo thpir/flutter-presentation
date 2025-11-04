@@ -30,7 +30,7 @@ class ServerpodBenefits extends StatelessWidget {
                   const BenefitTag(iconPath: "assets/images/icon_code_grey.webp", titleText: "Simple, beautiful code", descriptionText: "Every design decision made in Serverpod aims to make your server code as fast to write and as readable as possible."),
                   Center(child: InkWell(
                     onTap: () {
-                      UrlHandler().visitUrl("https://serverpod.dev/");
+                      UrlHandler.visitUrl("https://serverpod.dev/");
                     },
                     child: Image.asset("assets/images/qr_serverpod.webp", width: 300, fit: BoxFit.contain,))),
 

@@ -18,7 +18,7 @@ class FlutterIndustrial extends StatelessWidget {
           Center(
             child: InkWell(
               onTap: () {
-                UrlHandler().visitUrl("https://www.industrialflutter.com/");
+                UrlHandler.visitUrl("https://www.industrialflutter.com/");
               },
               child: Image.asset(
                 'assets/images/qr_flutter_industrial.webp',

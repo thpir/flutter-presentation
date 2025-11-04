@@ -10,17 +10,17 @@ class MadeWithFlutter extends StatelessWidget {
         "assets/images/icon_telegraaf.webp",
         "assets/images/icon_mijn_mooie_straat.webp",
         "assets/images/icon_covid_safe.webp",
-        "assets/images/009_07.webp",
-        "assets/images/009_08.webp",
-        "assets/images/009_09.webp",
+        "assets/images/icon_bmw_app.webp",
+        "assets/images/icon_gov_app.webp",
+        "assets/images/icon_engie_app.webp",
         null,
-        "assets/images/009_10.webp",
-        "assets/images/009_11.webp",
-        "assets/images/009_12.webp",
+        "assets/images/icon_hue_app.webp",
+        "assets/images/icon_google_wallet.webp",
+        "assets/images/icon_wonderous.webp",
         null,
         null,
-        "assets/images/009_13.webp",
-        "assets/images/009_14.webp",
+        "assets/images/icon_ebay.webp",
+        "assets/images/icon_event_shuttle.webp",
       ];
 
   @override
@@ -60,7 +60,7 @@ class MadeWithFlutter extends StatelessWidget {
               padding: const EdgeInsets.only(right: 24.0),
               child: InkWell(
                 onTap: () {
-                  UrlHandler().visitUrl("https://flutter.gskinner.com/wonderous/");
+                  UrlHandler.visitUrl("https://flutter.gskinner.com/wonderous/");
                 },
                 child: Image.asset(
                   "assets/images/wonderous_link.webp",

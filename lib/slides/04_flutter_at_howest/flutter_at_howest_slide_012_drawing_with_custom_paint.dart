@@ -109,7 +109,7 @@ class DrawingWithCustomPaint extends StatelessWidget {
                     padding: WidgetStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                   ),
                   onPressed: () {
-                    UrlHandler().visitUrl('https://youtu.be/SmqttvYdkHI?si=SfUCTIh2C0oRQa0j');
+                    UrlHandler.visitUrl('https://youtu.be/SmqttvYdkHI?si=SfUCTIh2C0oRQa0j');
                   }, 
                   child: Text(
                     'https://youtu.be/SmqttvYdkHI?si=SfUCTIh2C0oRQa0j',
